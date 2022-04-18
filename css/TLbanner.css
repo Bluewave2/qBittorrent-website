@@ -16,7 +16,8 @@
   transition: 0.5s;
 }
 
-#forkongithub a:hover, #forkongithub a:focus {
+#forkongithub a:hover,
+#forkongithub a:focus {
   background: #c11;
   color: #fff;
 }
@@ -52,16 +53,19 @@
   }
 
   #forkongithub a {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 4px 4px 10px rgba(0 0 0 80%);
     left: -70px;
     pointer-events: auto;
     position: absolute;
     top: 50px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     width: 200px;
+  }
+}
+
+@media only screen and (max-width: 760px) and (orientation: portrait) {
+  #forkongithub a {
+    left: -96px;
+    top: 29px;
   }
 }
